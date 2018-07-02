@@ -9,6 +9,16 @@ $("#loginClDashBd").click(function(){
 });
 
 // driver signup page strat
+$("#userNameInpt input").focus(function(e){	
+$("#usrNmLbl").addClass("usrNmLbl");
+});
+
+$("#userNameInpt input").blur(function(e){
+	let inputVal = e.currentTarget.value;
+	if(inputVal === ''){
+		$("#usrNmLbl").removeClass("usrNmLbl");
+	}
+});
 $("#mailIdInput input").focus(function(e){	
 $("#emailLbl").addClass("emailLbl");
 });
@@ -30,6 +40,7 @@ $("#mobileNoInpt input").blur(function(e){
 		$("#mblNoLbl").removeClass("mblNoLbl");
 	}
 });
+
 
 //driver signup page End
 

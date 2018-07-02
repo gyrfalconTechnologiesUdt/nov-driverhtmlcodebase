@@ -5,18 +5,21 @@
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/fontawesome-all.css">
 		<link type="text/css" rel="stylesheet" href="css/mdb.min.css">  
-		<link type="text/css" rel="stylesheet" href="css/common.css">
+		<link type="text/css" rel="stylesheet" href="css/driver.css">
         <script type="text/javascript" src= "js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src= "js/bootstrap.min.js"></script>		
         <script type="text/javascript" src= "js/driver_script.js"></script>
     </head>
     <body>
 	<div class = "nov-dbp-container">
-		<div class = "nov-heading">History</div>
+		<div class = "nov-heading">Dashboard
+			<img src="img/lftarroe.png" class="arrow">
+		</div>
 		<div class = "top1" id="cureentReq">Current Request	</div>
 		<div class ="top2" id="pastReq">Past Request</div>
 		<div class ="borderline"></div>
 		<div class="cardView-container">
+		<div class ="currentrequest">
 			<div class="nov-dbp-cardView">
 				<div>
 					<div class="leftInfo">Name:</div>
@@ -52,23 +55,23 @@
 				<div class ="decline"id="declineId1">Decline</div>
 			</div>
 		
-		<div class="nov-dbp-cardView">
+			<div class="nov-dbp-cardView">
 				<div>
 					<div class="leftInfo">Name:</div>
 					<div  class="rightInfo">Rajesh</div>
 					<div class="clearfix"></div>
 				</div>
-								<div>
+				<div>
 					<div class="leftInfo">From:</div>
 					<div  class="rightInfo">North sydney</div>
 					<div class="clearfix"></div>
 				</div>
-								<div>
+				<div>
 					<div class="leftInfo">To:</div>
 					<div  class="rightInfo">Mosman</div>
 					<div class="clearfix"></div>
 				</div>
-								<div>
+				<div>
 					<div class="leftInfo">Mobile No:</div>
 					<div  class="rightInfo">9855453211</div>
 					<div class="clearfix"></div>
@@ -86,7 +89,14 @@
 				<div class ="accept" id="popId1">Accept</div>
 				<div class ="decline"id="declineId1">Decline</div>
 			</div>
-			<div class="nov-dbp-cardView">
+		</div>
+		<div class ="popupmsg" id="msgBox">
+			<img src="img/close.png" class="close" id="CloseBut">
+			<div class ="msg">Click confirmation you send the request accepted message to the customer</div>
+			<div class ="confirm" id ="confirmId">Confirm</div>
+		</div>
+		<div class ="pastrequest">
+			<div class="nov-dbp-cardView1">
 				<div>
 					<div class="leftInfo">Name:</div>
 					<div  class="rightInfo">Michel</div>
@@ -120,7 +130,7 @@
 				<div class ="accept" id="popId1">Accept</div>
 				<div class ="decline"id="declineId1">Decline</div>
 			</div>
-			<div class="nov-dbp-cardView">
+			<div class="nov-dbp-cardView1">
 				<div>
 					<div class="leftInfo">Name:</div>
 					<div  class="rightInfo">Ramu</div>
@@ -154,77 +164,9 @@
 				<div class ="accept" id="popId1">Accept</div>
 				<div class ="decline"id="declineId1">Decline</div>
 			</div>
+		</div>
 			<div class="overlay"></div>
 		</div>
-		
-		
-	<!--	<div class = "top1" id="cureentReq">Current Request	</div>
-		<div class ="top2" id="pastReq">Past Request</div>
-		<div class ="borderline"></div>
-		<div class ="currentrequest">
-		<div class = "curreqdetails"id="curReq1">
-			<div class = "leftside">
-				<div class = "txt1">Name  : Rakesh</div>
-				<div class ="txt1"> From  : Vaucluse</div>
-				<div class ="txt1"> To    : Sydney</div>
-				<div class ="accept" id="popId1">Accept</div>
-			</div>
-			<div class ="rightside">
-				<div class ="txt2">Mobile No    : 9876543211</div>
-				<div class ="txt2">Weight       : 1ton</div>
-				<div class ="txt2">Amount       : Rs.5000</div>
-				<div class ="decline"id="declineId1">Decline</div>
-			</div>
-		</div>
-		<div class = "curreqdetails"id="curReq2">
-			<div class = "leftside">
-				<div class = "txt1">Name  : Rajesh</div>
-				<div class ="txt1">From   : North sydney</div>
-				<div class ="txt1">To     : Mosman</div>
-				<div class ="accept" id="popId2">Accept</div>	
-			</div>
-			<div class ="rightside">
-				<div class ="txt2">Mobile No    : 9855453211</div>
-				<div class ="txt2">Weight       : 2ton</div>
-				<div class ="txt2">Amount       : Rs.8000</div>
-				<div class="decline"id="declineId2">Decline</div>	
-			</div>
-		</div>
-		<div class ="popupmsg" id="msgBox">
-			<img src="img/close.png" class="close" id="CloseBut">
-			<div class ="msg">Click confirmation you send the request accepted message to the customer</div>
-			<div class ="confirm" id ="confirmId">Confirm</div>
-		</div>
-		</div>
-		<div class = "pasreqdetails">
-			<div class = "leftside">
-				<div class = "txt1">Name  : Michel</div>
-				<div class ="txt1"> From  : Sydney</div>
-				<div class ="txt1"> To    : North sydney</div>
-				<div class ="accept" id ="accbtn">Accept</div>
-			</div>
-			<div class ="rightside">
-				<div class ="txt2">Mobile No    : 9876567891</div>
-				<div class ="txt2">Weight       : 2ton</div>
-				<div class ="txt2">Amount       : Rs.8000</div>
-				<div class="decline">Decline</div>	
-			</div>	
-		</div>
-		<div class = "pasreqdetails">
-			<div class = "leftside">
-				<div class = "txt1">Name  : Ramu</div>
-				<div class ="txt1"> From  : North sydney</div>
-				<div class ="txt1"> To    : Mascot</div>
-				<div class ="accept">Accept</div>
-			</div>
-			<div class ="rightside">
-				<div class ="txt2">Mobile No    : 9871456780</div>
-				<div class ="txt2">Weight       : 1ton</div>
-				<div class ="txt2">Amount       : Rs.5000</div>
-				<div class="decline">Decline</div>	
-			</div>	
-		</div>
-		<div class="overlay"></div>-->
 	</div>
 	</body>
 	</html>
