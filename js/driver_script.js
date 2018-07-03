@@ -129,6 +129,8 @@ $("#confirmId").click(function () {
 });	
 //poppup message end
 
+
+
 //driver settings page start
 $("#addressId input").focus(function(e){	
 $("#addressLbl").addClass("addressLbl");
