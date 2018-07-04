@@ -95,6 +95,11 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 }
 /* driver history page End*/
 
+/*Dashboard page start*/
+.popupcontent{ position: fixed; width: 80%; height: 135px; left: 10%;top: 160px; background-color: #fff; border: 1px solid #00000069;}
+.popupBox{  padding: 20px; text-align: center;}
+.okBtn{ text-align: center; width: 70px; height: 40px; background: #2a3746; line-height: 2.6em;cursor: pointer; color: #fff; border: none; margin: 0 auto; margin-top: 5px;}
+/*Dashboard page* end*/
 
 /* driver settings page start*/
 .address{position: relative;}

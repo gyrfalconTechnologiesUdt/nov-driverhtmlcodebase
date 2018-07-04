@@ -22,6 +22,9 @@ $("#registerLink").click(function(){
 $("#loginClDashBd").click(function(){
     window.location.href = "2_driver_currenthistorypage.html";
 }); 
+$("#confirmId").click(function(){
+    window.location.href = "4_driver_locationpage.html";
+}); 
 
 // driver signup page strat
 $("#userNameInpt input").focus(function(e){	
@@ -129,7 +132,12 @@ $("#confirmId").click(function () {
 });	
 //poppup message end
 
-
+$("#close").click(function() {
+	$("#popUp").hide();		
+});
+$(window).on('load', function(){ 
+	$("#popUp").show();
+});	
 
 //driver settings page start
 $("#addressId input").focus(function(e){	
