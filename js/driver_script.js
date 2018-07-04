@@ -132,12 +132,16 @@ $("#confirmId").click(function () {
 });	
 //poppup message end
 
+//location page start
+$("#map").hide();
 $("#close").click(function() {
-	$("#popUp").hide();		
+	$("#popUp").hide();	
+    $("#map").show();	
 });
 $(window).on('load', function(){ 
 	$("#popUp").show();
 });	
+//location page End
 
 //driver settings page start
 $("#addressId input").focus(function(e){	
@@ -151,5 +155,6 @@ $("#addressId input").blur(function(e){
 });
 
 //driver settings page End
+
 
 });
