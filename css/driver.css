@@ -33,8 +33,8 @@ input:focus-out{border-bottom: 2px solid #2a3746 !important; font-size: 0.8em !i
 .choosefile{width: 150px;    height: 26px; text-align: center; margin-left: 175px; margin-top: 30px; color: #e7e7e7; background-color: #2a3746; width: 150px; cursor: defaul;}
 .hidden{display: none;}
 .pretty {margin-top: 30px;}
-
 /* driver signup page End*/
+
 /* customer Sign In Page Start*/
 .logintitle{margin-top: 30px;}
 .logoimg{text-align: center; }
@@ -62,12 +62,9 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 
 .nov-container{    width: 300px;   }	
 }
-
 /* customer Sign In Page End */
 
-
-
-/* driver history page strat*/
+/* driver Dashboard page strat*/
 .nov-heading{background-color: #2a3746; height: 50px; color: #e7e7e7; text-align: center; line-height: 3em;}
 .cardView-container{padding-left: 15px; padding-right: 15px; margin-top: 15px;}
 .nov-dbp-cardView, .nov-dbp-cardView1{margin-top: 15px; padding-bottom: 10px; background: #dbdad8; border: 2px solid #bfbdbd; border-radius: 5px; -webkit-border-radius: 5px;width: 100%; display: inline-block;}
@@ -94,13 +91,27 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 .paytm, .cash, .below-txt1, .below-txt2, .below-txt3{font-size: 0.8em;}	
 .location-hd, .contact-hd, .Notifications-hd{font-size: 1em;}
 }
-/* driver history page End*/
+/* driver Dashboard page End*/
 
-/*Dashboard page start*/
-.popupcontent{ position: fixed; width: 80%; height: 135px; left: 10%;top: 160px; background-color: #fff; border: 1px solid #00000069;}
+/*location page start*/
+.popupcontent{ position: fixed; width: 80%; height: 135px; left: 10%;top: 230px; background-color: #fff; border: 1px solid #00000069;}
 .popupBox{  padding: 20px; text-align: center;}
 .okBtn{ text-align: center; width: 70px; height: 40px; background: #2a3746; line-height: 2.6em;cursor: pointer; color: #fff; border: none; margin: 0 auto; margin-top: 5px;}
-/*Dashboard page* end*/
+#map {height: 400px; width: 100%;}
+/*location page* end*/
+
+/* Hamburger menu start*/
+.sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #fff; overflow-x: hidden; transition: 0.7s; border: 1px solid;}
+.sidenav li{padding: 8px 8px 8px 20px; text-decoration: none; color: #000; display: block; transition: 0.3s;}
+.sidenav li:hover {background-color: #e7e7e7;}
+.headerbox{height: 70px; background-color: #2a3746; color: #fff; padding: 20px;}
+.sidenav .closebtn {position: absolute; top: 0; right: 25px; font-size: 40px; margin-left: 50px; cursor: pointer; color: #fff;}
+.list{margin-top: 20px; cursor: pointer;}
+.navstyle{font-size:30px;cursor:pointer; margin-left: 15px;}
+@media screen and (max-height: 450px) {
+  .sidenav li {font-size: 1.2em; }
+}
+/* Hamburger menu End*/
 
 /* driver settings page start*/
 .address{position: relative;}
@@ -110,135 +121,7 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 .borderline{display: block;    width: 100%; line-height: 1.5; color: #000; border: 1px solid #000;}
 .fa{float: right;}
 .settingpage{padding: 0px 15px;}
+.submit{ width: 230px; height: 40px; margin: 40px auto; background: #2a3746; line-height: 2.5em; color: #e7e7e7; border-radius: 7px; text-align: center; cursor: pointer;}
 /* driver settings page End*/
 
-/* Hamburger menu start*/
-a { text-decoration: none; }
-
-a i {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-}
-
-nav {
-  background-color: #fff;
-  height: 100%;
-  position: fixed;
-  left: -300px;
-  top: 30px;
-  -moz-transition: left 0.2s linear;
-  -o-transition: left 0.2s linear;
-  -webkit-transition: left 1s ease;
-  transition: left 1s ease;
-  width: 300px;
-  z-index: 9001;/* IT'S OVER 9000! */
-}
-
-nav #menuToggle {
-    display: block;
-    position: fixed;
-    height: 30px;
-    left: 0;
-    top: 0;
-    width: 40px;
-}
-
-nav #menuToggle span {
-  background: black;
-  display: block;
-  height: 10%;
-  left: 10%;
-  position: absolute;
-  top: 45%;
-  width: 60%;
-}
-
-nav #menuToggle span:before,
-nav #menuToggle span:after {
-  background: black;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: -250%;
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  width: 100%;
-}
-
-nav #menuToggle span:after { top: 250%; }
-
-nav a:nth-child(n+2) {
- color: #000;
-    display: block;
-    font-size: 0.9em;
-    padding: 10px;
-   
-}
-
-
-nav a:nth-child(n+2):hover{background-color: #e7e7e7;}
-
-nav a:nth-child(n+2):hover:after { width: 0%; }
-
-.open { left: 0; top: 30px}
-
-.open #menuToggle span {
-  background: transparent;
-  left: 10%;
-  top: 45%;
-}
-
-.open #menuToggle span:before,
-.open #menuToggle span:after {
-  background: black;
-  top: 0;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.open #menuToggle span:after {
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-#menuToggle .navClosed {
-  -moz-transition: background 0.1s linear;
-  -o-transition: background 0.1s linear;
-  -webkit-transition: background 0.1s linear;
-  transition: background 0.1s linear;
-}
-
-#menuToggle .navClosed:before,
-#menuToggle .navClosed:after {
-  -moz-transition: top 0.2s linear 0.1s, -moz-transform 0.2s linear 0.1s;
-  -o-transition: top 0.2s linear 0.1s, -o-transform 0.2s linear 0.1s;
-  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s linear;
-  -webkit-transition-delay: 0.1s, 0.1s;
-  transition: top 0.2s linear 0.1s, transform 0.2s linear 0.1s;
-}
-
-#menuToggle .navOpen {
-  -moz-transition: background 0.1s linear 0.2s;
-  -o-transition: background 0.1s linear 0.2s;
-  -webkit-transition: background 0.1s linear;
-  -webkit-transition-delay: 0.2s;
-  transition: background 0.1s linear 0.2s;
-}
-
-#menuToggle .navOpen:before,
-#menuToggle .navOpen:after {
-  -moz-transition: top 0.2s linear, -moz-transform 0.2s linear;
-  -o-transition: top 0.2s linear, -o-transform 0.2s linear;
-  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s linear;
-  transition: top 0.2s linear, transform 0.2s linear;
-}
-/* Hamburger menu End*/
 

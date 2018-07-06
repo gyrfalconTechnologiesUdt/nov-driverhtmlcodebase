@@ -10,20 +10,42 @@
         <script type="text/javascript" src= "js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src= "js/bootstrap.min.js"></script>		
         <script type="text/javascript" src= "js/driver_script.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+		
 </head>
 <body>
 	<div class="nov-dashbrd-container">
-		<nav> 
-			<a href="" id="menuToggle" title="show menu"><span class="navClosed"><i>show menu</i></span></a> 
-				<a href="#" title="Item 1">Home</a>
-				<a href="#" title="Item 2">Trip</a> 
-				<a href="#" title="Item 3">Settings</a> 
-				<a href="#" title="Item 3">Logout</a> 
-		</nav>
-		<div id="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125282.0626040293!2d77.29377233950571!3d11.108574156356486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b0424d75b9%3A0x4750551698a91687!2sTiruppur%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1530791858461" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
+		<div id="mySidenav" class="sidenav">
+			<div class="headerbox">Register Now</div>
+			<div class="closebtn" onclick="closeNav()">&times;</div>
+			<div class ="list">
+				  <li><div id="homeId">Home</div></li>
+				  <li><div id="tripId">Trip</div></li>
+				  <li><div id="settingsId">Settings</div></li>
+				  <li><div id="logoutId">logout</div></li>
+		    </div>
+	    </div>
+		<span class="navstyle" onclick="openNav()">&#9776; </span>
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "350px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+			  var uluru = {lat:  11.1085242, lng: 77.3410656};
+			  var map = new google.maps.Map(
+				  document.getElementById('map'), {zoom: 4, center: uluru});
+			  var marker = new google.maps.Marker({position: uluru, map: map});
+			}
+		</script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+		</script>
 		<div class="popupcontent" id="popUp">
 			<div class="popupBox" >Turn on location services</div>	
 			<div class="okBtn" id="close">Ok</div>

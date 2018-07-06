@@ -25,6 +25,24 @@ $("#loginClDashBd").click(function(){
 $("#confirmId").click(function(){
     window.location.href = "4_driver_locationpage.html";
 }); 
+$("#homeId").click(function(){
+    window.location.href = "4_driver_locationpage.html";
+}); 
+$("#tripId").click(function(){
+    window.location.href = "2_driver_currenthistorypage.html";
+}); 
+$("#settingsId").click(function(){
+    window.location.href = "3_driver_settings.html";
+}); 
+$("#logoutId").click(function(){
+    window.location.href = "1_customer_login.html";	
+});
+$("#arrowId").click(function(){
+    window.location.href = "4_driver_locationpage.html";	
+});
+$("#backarrowId").click(function(){
+    window.location.href = "4_driver_locationpage.html";	
+});
 
 // driver signup page strat
 $("#userNameInpt input").focus(function(e){	
@@ -58,9 +76,8 @@ $("#mobileNoInpt input").blur(function(e){
 		$("#mblNoLbl").removeClass("mblNoLbl");
 	}
 });
-
-
 //driver signup page End
+
 //Sign In Page Start
 $("#userNameInpt input").focus(function(e){	
 $("#usrNmLbl").addClass("usrNmLbl");
@@ -86,7 +103,7 @@ $("#passWrdInpt input").blur(function(e){
 });
 //Sign In Page End 
 
-//driver history page start
+//driver Dashboard page start
 $(".currentrequest").show();
 $(".pastrequest").hide();
  $("#pastReq").click(function(){
@@ -117,7 +134,7 @@ $( "#declineId1" ).click(function() {
 $( "#declineId2" ).click(function() {
   $( "#reqId2" ).css("opacity", "0.5");
 });
-//driver history page End
+//driver Dashboard page End
 
 //poppup message start
 $("#msgBox").hide();
@@ -143,6 +160,7 @@ $(window).on('load', function(){
 });	
 //location page End
 
+
 //driver settings page start
 $("#addressId input").focus(function(e){	
 $("#addressLbl").addClass("addressLbl");
@@ -153,32 +171,16 @@ $("#addressId input").blur(function(e){
 		$("#addressLbl").removeClass("addressLbl");
 	}
 });
+$('#editId1').click(function() {
+     $('#nameId').focus();
+});
+$('#editId2').click(function() {
+     $('#mblId').focus();
+});
+$('#editId3').click(function() {
+     $('#addId').focus();
+});
 
 //driver settings page End
 
-//Hamburger menu Start
-(function($){
-	// Menu Functions
-	$(document).ready(function(){
-  	$('#menuToggle').click(function(e){
-    	var $parent = $(this).parent('nav');
-      $parent.toggleClass("open");
-      var navState = $parent.hasClass('open') ? "hide" : "show";
-      $(this).attr("title", navState + " navigation");
-			// Set the timeout to the animation length in the CSS.
-			setTimeout(function(){
-				console.log("timeout set");
-				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
-			}, 200);
-    	e.preventDefault();
-  	});
-  });
-})(jQuery);
-//Hamburger menu End
-function initMap() {
-  var uluru = {lat: 11.10675, lng: 	77.34785};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
 });
