@@ -97,9 +97,8 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 .popupcontent{ position: fixed; width: 80%; height: 135px; left: 10%;top: 230px; background-color: #fff; border: 1px solid #00000069;}
 .popupBox{  padding: 20px; text-align: center;}
 .okBtn{ text-align: center; width: 70px; height: 40px; background: #2a3746; line-height: 2.6em;cursor: pointer; color: #fff; border: none; margin: 0 auto; margin-top: 5px;}
-#map {height: 400px; width: 100%;}
 /*location page* end*/
-
+#map {height: 400px; width: 100%;}
 /* Hamburger menu start*/
 .sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #fff; overflow-x: hidden; transition: 0.7s; border: 1px solid;}
 .sidenav li{padding: 8px 8px 8px 20px; text-decoration: none; color: #000; display: block; transition: 0.3s;}
