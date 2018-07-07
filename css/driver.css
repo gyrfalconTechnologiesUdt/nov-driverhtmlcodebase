@@ -5,7 +5,7 @@ body{    font-family: sans-serif;	background-color: #e7e7e7; 	background-attachm
 .nov-h1{text-align: center; font-size: 1.2em;   font-weight: bold;}
 .nov-container{    width: 340px;    margin: 0 auto;}
 .clearfix{clear: both!important; float: none!important; }
-.errormsg{ color: #d22525; font-size: 0.80em; padding-top: 5px;}
+.error{ color: #d22525; font-size: 0.80em; padding-top: 5px;}
 /*Common Styles End**/
 
 /* driver signup page strat*/
@@ -68,7 +68,7 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 .newpassword {position: relative; margin-top: 40px;}
 .newPaswrdLbl{top: -25px !important; color: #2a3746 !important; font-size: 0.80em !important;}
 .newpassword  label{	color: rgb(188,188,188) ; position: absolute; top: 0px; transition: 0.5s; pointer-events: none;}
-.newpassword input[type=password]	{background: transparent; border: 0; outline: 0;  border-bottom: 1px solid rgb(188,188,188);	}
+.newpassword input[type=text]	{background: transparent; border: 0; outline: 0;  border-bottom: 1px solid rgb(188,188,188);	}
 .submitbtn{ text-align: center; width: 230px;    height: 40px;    margin: 40px auto;    background: #2a3746;   line-height: 2.2em;   color: #fff;
     border-radius: 7px; border: none; cursor: pointer;}
 /*reset passwrd end*/

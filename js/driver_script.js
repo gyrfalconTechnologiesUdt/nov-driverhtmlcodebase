@@ -97,7 +97,26 @@ $("#userNameInpt input").blur(function(e){
 		
 	}
 });
-
+$("#loginClDashBd").click(function(){
+	var txtUsername = document.getElementById("txtUsername").value;
+	var txtPassword = document.getElementById("txtPassword").value;
+	if(txtUsername== "pavithra" && txtPassword== "pavi2123")
+	{
+    window.location.href = "2_driver_currenthistorypage.html";
+	}
+	 {
+		if (txtPassword!= "pavi2123")
+		{
+			document.getElementById('pswrdError').innerHTML="password do not match";
+		}
+	 }
+	 {
+		if (txtUsername!= "pavithra")
+		{
+			document.getElementById('usernameError').innerHTML="username do not match";
+		}
+	}
+});
 $("#passWrdInpt input").focus(function(e){	
 $("#paswrdLbl").addClass("paswrdLbl");
 });
@@ -108,6 +127,8 @@ $("#passWrdInpt input").blur(function(e){
 		$("#paswrdLbl").removeClass("paswrdLbl");
 	}
 });
+
+
 //Sign In Page End 
 
 //customer resetpaswrd page Start 
