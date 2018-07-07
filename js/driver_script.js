@@ -16,6 +16,9 @@ $("#googlelnk").click(function(){
 $("#twitterlnk").click(function(){
     window.location.href = "http://www.twitter.com/";	
 });
+$("#forgotLnk").click(function(){
+    window.location.href = "4_customer_forgotpassword.html";	
+});
 $("#registerLink").click(function(){
     window.location.href = "1_driver_signup.html";
 }); 
@@ -102,6 +105,22 @@ $("#passWrdInpt input").blur(function(e){
 	}
 });
 //Sign In Page End 
+
+//customer resetpaswrd page Start 
+$("#newPswrdInpt input").focus(function(e){	
+$("#newPaswrdLbl").addClass("newPaswrdLbl");
+});
+
+$("#newPswrdInpt input").blur(function(e){
+	let inputVal = e.currentTarget.value;
+	if(inputVal === ''){
+		$("#newPaswrdLbl").removeClass("newPaswrdLbl");
+	}
+});
+$("#submitLnk").click(function(){
+    alert("submitted");
+});
+//customer resetpaswrd page End 
 
 //driver Dashboard page start
 $(".currentrequest").show();

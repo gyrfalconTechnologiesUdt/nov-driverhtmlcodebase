@@ -64,6 +64,15 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 }
 /* customer Sign In Page End */
 
+/*reset passwrd start*/
+.newpassword {position: relative; margin-top: 40px;}
+.newPaswrdLbl{top: -25px !important; color: #2a3746 !important; font-size: 0.80em !important;}
+.newpassword  label{	color: rgb(188,188,188) ; position: absolute; top: 0px; transition: 0.5s; pointer-events: none;}
+.newpassword input[type=password]	{background: transparent; border: 0; outline: 0;  border-bottom: 1px solid rgb(188,188,188);	}
+.submitbtn{ text-align: center; width: 230px;    height: 40px;    margin: 40px auto;    background: #2a3746;   line-height: 2.2em;   color: #fff;
+    border-radius: 7px; border: none; cursor: pointer;}
+/*reset passwrd end*/
+
 /* driver Dashboard page strat*/
 .nov-heading{background-color: #2a3746; height: 50px; color: #e7e7e7; text-align: center; line-height: 3em;}
 .cardView-container{padding-left: 15px; padding-right: 15px; margin-top: 15px;}
@@ -106,7 +115,7 @@ input:focus{border-bottom: 2px solid #2a3746 !important; font-size: 0.80em !impo
 .headerbox{height: 70px; background-color: #2a3746; color: #fff; padding: 20px;}
 .sidenav .closebtn {position: absolute; top: 0; right: 25px; font-size: 40px; margin-left: 50px; cursor: pointer; color: #fff;}
 .list{margin-top: 20px; cursor: pointer;}
-.navstyle{font-size:30px;cursor:pointer; margin-left: 15px;}
+.navstyle{font-size:30px;cursor:pointer; margin-left: 15px; position: absolute; top: 0;}
 @media screen and (max-height: 450px) {
   .sidenav li {font-size: 1.2em; }
 }
