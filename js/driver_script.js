@@ -28,6 +28,9 @@ $("#loginClDashBd").click(function(){
 $("#confirmId").click(function(){
     window.location.href = "4_driver_locationpage.html";
 }); 
+$("#registerId").click(function(){
+    window.location.href = "1_driver_signup.html";	
+});
 $("#homeId").click(function(){
     window.location.href = "4_driver_locationpage.html";
 }); 
@@ -200,7 +203,9 @@ $('#editId2').click(function() {
 $('#editId3').click(function() {
      $('#addId').focus();
 });
-
+$("#submitId").click(function(){
+    alert("Updated Successfully");
+});
 //driver settings page End
 
 });
