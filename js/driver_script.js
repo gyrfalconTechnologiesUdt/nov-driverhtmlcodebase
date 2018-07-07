@@ -1,9 +1,9 @@
 $(document) .ready(function(){
 
+//Redrict page Start
 $("#driver_signup").click(function(){
     window.location.href = "4_driver_login.html";
 }); 
-
 $("#driver_signup").click(function(){
     window.location.href = "1_customer_login.html";	
 });
@@ -46,6 +46,7 @@ $("#arrowId").click(function(){
 $("#backarrowId").click(function(){
     window.location.href = "4_driver_locationpage.html";	
 });
+//Redrict page End
 
 // driver signup page strat
 $("#userNameInpt input").focus(function(e){	
